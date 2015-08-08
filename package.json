@@ -41,7 +41,17 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.0.0"
+    "broccoli-caching-writer": "^1.0.0",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-postcss": "^1.3.0",
+    "broccoli-stew": "^0.3.5",
+    "ember-cli-babel": "^5.0.0",
+    "mkdirp": "^0.5.1",
+    "postcss": "^4.1.16",
+    "postcss-ember-components": "git+ssh://git@github.com/JFickel/postcss-ember-components.git",
+    "symlink-or-copy": "^1.0.1",
+    "walk-sync": "^0.1.3",
+    "rsvp": "^3.0.17"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
