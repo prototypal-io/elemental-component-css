@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 Ember.Component.reopen({
   componentStyle: Ember.computed(function () {
-    var key = this._debugContainerKey.replace('component:', 'style:')
+    var key = this._debugContainerKey.replace('component:', 'style:');
     return this.container.lookup(key);
   })
 });
