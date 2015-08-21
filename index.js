@@ -15,6 +15,10 @@ module.exports = {
   setupPreprocessorRegistry: function (type, registry) {
     if (type === 'parent') {
       registry.add('js', require('./lib/component-style-preprocessor'));
+      registry.add('htmlbars-ast-plugin', {
+        name: 'transform-component-classes',
+        plugin: require('./lib/transform-component-classes')
+      });
     }
   }
 };
