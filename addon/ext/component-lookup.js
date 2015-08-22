@@ -9,8 +9,7 @@ Ember.ComponentLookup.reopen({
     if (!ComponentStyleMixin.detect(factory.PrototypeMixin)) {
       factory.reopen(ComponentStyleMixin, {
         componentStyle: container.lookup(styleFullName),
-        classNames: [componentStyle.componentClass],
-        classes: componentStyle.classes
+        classNames: [componentStyle.componentClass]
       });
     }
     return factory;

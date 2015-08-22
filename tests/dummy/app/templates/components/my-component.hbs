@@ -1,6 +1,6 @@
 <h1 class="foo">Red Text</h1>
 <h1 class="foo baz">Red Text</h1>
-<h1 class="bar {{classes.baz}}">Blue Text</h1>
-<h1 class={{get classes dynamicClass}}>Blue Text</h1>
+<h1 class={{dynamicClass}}>Blue Text</h1>
+<h1 class="{{dynamicClass}} baz bootstrap-class concat-{{dynamicClass}}">Blue Text</h1>
 
 {{yield}}
